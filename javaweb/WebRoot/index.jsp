@@ -185,7 +185,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<!-- 首页 end -->
 						<!--手机版-->
 						<div class="pop_wrap">
-							<a href="http://www.u17.com/z/app/pc_download/pc_download.html" class="nav nav_app" target="_blank" style="color:#333;">手机版<em></em></a>
+							<a href="" class="" target="" style=""><em></em></a>
 							<div class="pop_box" style="display:none;"></div>
 						</div>
 						<!--手机版 end-->
@@ -203,7 +203,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<!--有熊 end-->
 						<!--游戏-->
 						<div class="pop_wrap">
-							<a href="http://game.u17.com/" class="nav nav_game" target="_blank" style="color:#333;">游戏<em></em></a>
+							<a href="http://game.u17.com/" class="" target="_blank" style="color:#333;"><em></em></a>
 							<div class="pop_box" style="display:none;"></div>
 						</div>
 						<!--游戏 end-->
@@ -1693,55 +1693,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<a href="http://www.u17.com/comic/116263.html" class="comic_tit" target="_blank" title="我的男友不是人">我的男友不是人</a>
 								<p class="comic_type">少女/恋爱</p>
 							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/3166.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2010/11/2786_1290484999_44z22704KDLT.big.jpg" alt="" title="镇魂街" /> </a>
-								<a href="http://www.u17.com/comic/3166.html" class="comic_tit" target="_blank" title="镇魂街"><i class="ico_rec"></i>镇魂街</a>
-								<p class="comic_type">少年/魔幻</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/11072.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2018/07/311700_1531131092_rVZFVZbQl7Qk.big.jpg" alt="" title="惊叹之夜" /> </a>
-								<a href="http://www.u17.com/comic/11072.html" class="comic_tit" target="_blank" title="惊叹之夜">惊叹之夜</a>
-								<p class="comic_type">少年/魔幻/动作</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/57524.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2018/12/3674833_1545213600_19Y7ZEO11Ru1.big.jpg" alt="" title="尚善" /> </a>
-								<a href="http://www.u17.com/comic/57524.html" class="comic_tit" target="_blank" title="尚善"><i class="ico_rec"></i>尚善</a>
-								<p class="comic_type">少女/生活</p>
-							</li>
-							<li>
-								<!--  -->
-								<!-- <em class="ico_tiaoman"></em> -->
-								<a href="http://www.u17.com/comic/145630.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2017/05/5475960_1495520371_2LOf5OgcNCkN.big.jpg" alt="" title="心之茧" /> </a>
-								<a href="http://www.u17.com/comic/145630.html" class="comic_tit" target="_blank" title="心之茧"><i class="ico_rec"></i>心之茧</a>
-								<p class="comic_type">少女/生活/恋爱/纯爱</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/156883.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2017/08/16468133_1501671222_M4eUzUEOuJRh.big.jpg" alt="" title="我和妈妈抢男友" /> </a>
-								<a href="http://www.u17.com/comic/156883.html" class="comic_tit" target="_blank" title="我和妈妈抢男友">我和妈妈抢男友</a>
-								<p class="comic_type">少女/恋爱/纯爱</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/72492.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2014/05/3784173_1400833417_dkTYKAKWjjgG.big.jpg" alt="" title="无尽的黎明" /> </a>
-								<a href="http://www.u17.com/comic/72492.html" class="comic_tit" target="_blank" title="无尽的黎明">无尽的黎明</a>
-								<p class="comic_type">少女/恋爱/纯爱</p>
-							</li>
-							<li>
-								<!--  -->
-								<!-- <em class="ico_tiaoman"></em> -->
-								<a href="http://www.u17.com/comic/143300.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2018/10/18313169_1538844735_h449PTr2P8rq.big.jpg" alt="" title="抢来的‘媳妇’’" /> </a>
-								<a href="http://www.u17.com/comic/143300.html" class="comic_tit" target="_blank" title="抢来的‘媳妇’’"><i class="ico_rec"></i>抢来的‘媳妇’’</a>
-								<p class="comic_type">少女/搞笑/恋爱/纯爱</p>
-							</li>
+														
 						</ul>
 						<div class="comic_slide_prev" style="display:none;"></div>
 						<div class="comic_slide_next"></div>
@@ -2047,49 +1999,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<a href="http://www.u17.com/comic/130521.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2018/05/109268_1525508639_tO5XwY71OBoT.big.jpg" alt="" title="妙手仙丹" /> </a>
 								<a href="http://www.u17.com/comic/130521.html" class="comic_tit" target="_blank" title="妙手仙丹">妙手仙丹</a>
 								<p class="comic_type">巨力少女vs闷骚师父</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/73083.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2018/02/631752_1519462123_6GgTBZx6feBd.big.jpg" alt="" title="开元秘史" /> </a>
-								<a href="http://www.u17.com/comic/73083.html" class="comic_tit" target="_blank" title="开元秘史">开元秘史</a>
-								<p class="comic_type">波澜壮阔的盛唐秘辛</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/1368.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2017/06/1225_1497251484_WV4WVjfj6RnQ.big.jpg" alt="" title="以彼之名" /> </a>
-								<a href="http://www.u17.com/comic/1368.html" class="comic_tit" target="_blank" title="以彼之名">以彼之名</a>
-								<p class="comic_type">绚烂的咒术师传说！</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/136641.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2016/09/16818669_1475028266_FsTz41BgF64F.big.jpg" alt="" title="温柔以待" /> </a>
-								<a href="http://www.u17.com/comic/136641.html" class="comic_tit" target="_blank" title="温柔以待"><i class="ico_rec"></i>温柔以待</a>
-								<p class="comic_type">荷尔蒙黑道恋爱故事</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/98063.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2017/04/1220_1492827904_9cf74duR38MB.big.jpg" alt="" title="邪君宠-貂蝉" /> </a>
-								<a href="http://www.u17.com/comic/98063.html" class="comic_tit" target="_blank" title="邪君宠-貂蝉">邪君宠-貂蝉</a>
-								<p class="comic_type">穿越貂蝉结缘暴君恋</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/126616.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2019/01/14064142_1547217813_w5Y1RrUbfUzU.big.jpg" alt="" title="空心恋人" /> </a>
-								<a href="http://www.u17.com/comic/126616.html" class="comic_tit" target="_blank" title="空心恋人">空心恋人</a>
-								<p class="comic_type">纯爱之路</p>
-							</li>
-							<li>
-								<!--  -->
-								<!--  -->
-								<a href="http://www.u17.com/comic/178994.html" class="comic_pic" target="_blank"> <img xsrc="http://cover.u17i.com/2018/11/28447_1543489653_K5ksSssb56p2.big.jpg" alt="" title="小龙的随身空间2" /> </a>
-								<a href="http://www.u17.com/comic/178994.html" class="comic_tit" target="_blank" title="小龙的随身空间2"><i class="ico_rec"></i>小龙的随身空间2</a>
-								<p class="comic_type">倒霉男家养天降金龙</p>
-							</li>
+							</li>														
 						</ul>
 						<div class="comic_slide_prev" style="display:none;"></div>
 						<div class="comic_slide_next"></div>
