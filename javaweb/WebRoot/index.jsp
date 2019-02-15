@@ -10,7 +10,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <base href="<%=basePath%>">
     <meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=0">
-    <title>漫画-有妖气原创漫画梦工厂- 首页</title>
+    <title>漫画-有妖气漫画梦工厂- 首页</title>
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
