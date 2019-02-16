@@ -224,7 +224,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										<a href="http://user.u17.com/favorite/list.php" target="_blank"><span><i>漫画更新</i><em id="notify_count_favorite_comic_v4" class="f99">0</em></span></a>
 									</li>
 									<li>
-										<a href="http://user.u17.com/message/system_message_list.php" target="_blank"><span><i>系统消息</i><em id="notify_count_system_message" class="f99">0</em></span></a>
+										<a href="http://user.u17.com/message/system_message_list.php" target="_nk"><span><i>系统消息</i><em id="notify_count_system_message" class="f99">0</em></span></a>
 									</li>
 									<!--<li id="author_message_li" style="display:none;"><a href="http://comic.user.u17.com/message/message_list.php" target="_blank"><span><i>作者消息</i><em id="notify_count_author_message" class="f99">0</em></span></a></li>-->
 									<!-- <li><a href="http://user.u17.com/message/message_list.php" target="_blank"><span><i>短消息</i><em id="notify_count_user_message" class="f99">0</em></span></a></li> -->
@@ -5902,7 +5902,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="fl halving_line"></div>
 				<div class="fl copyright">
 					<p>©2018 有妖气
-						<a href="http://www.u17.com" target="_blank">http://www.u17.com</a> 北京四月星空网络技术有限公司 版权所有</p>
+						<a href="http://www.u17.com" target="_blank">http://www.666.com</a> 北京四月星空网络技术有限公司 版权所有</p>
 					<p>京ICP证：
 						<a href="http://www.miibeian.gov.cn/" target="_blank">14013667号</a> 网络文化经营许可证：
 						<a href="http://static.u17i.com/zt/images/zhengjian/wenwen2017.jpg" target="_blank">京网文[2017]5583-660号</a>
