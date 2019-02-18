@@ -178,7 +178,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<div class="left" id="top_nav">
 						<!-- 首页 -->
 						<div class="pop_wrap">
-							<a href="http://www.u17.com/" class="nav1 nav_index" style="color:#333;">首页</a>
+							<a href="index.jsp" class="nav1 nav_index" style="color:#333;">首页</a>
 						</div>
 						<!-- 首页 end -->						
 					</div>
