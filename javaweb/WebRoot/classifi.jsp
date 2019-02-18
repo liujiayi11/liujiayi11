@@ -7,7 +7,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>漫画分类-Thunder漫画梦工厂</title>
+<title>漫画分类-Thunder漫画f梦工厂</title>
 <link href="http://static.u17i.com/v4/common/css/basic.css?t1515655158"
 	rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css"
