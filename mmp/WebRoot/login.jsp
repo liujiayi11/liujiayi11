@@ -12,27 +12,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <meta charset="UTF-8">
   <title>漫漫登陆</title> 
       <link rel="stylesheet" href="css/Loginstyle.css"> 
+      <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
       <script type="text/javascript">
-  		//js对象
-  		//var user = {name:'zhangsan',age:24,tel:['1399999','1388888'],book:{bname:'java',price:200}};
-  		//var userstr = JSON.stringify(user);	
-  		function show(){ 
-  		   alert("11");		
-  			$.ajax({
-  				type:'POST',
-  				url:'login.do',
-  				data:'param=login',
-  				success:function(msg){ 					
-  				}
-  			});
-  	}
-      </script>
+		function operation(val){
+			var form = document.getElementById("myform");
+			form.action = "login.do?param="+val;
+			form.method="post";
+			form.submit();
+		}
+	</script>
       
 </head>
 
 <body>
 
   <body>
+  <form action="login.do" id="myform">
 	<div class="login">
 		<div class="login-screen">
 			<div class="app-title">
@@ -47,12 +42,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<input type="password" class="login-field" value="" placeholder="用户密码" name="upass" id="login-pass">
 				<label class="login-field-icon fui-lock" for="login-pass"></label>
 				</div></br>
-                <button type="button" class="btn btn-primary btn-large btn-block" onclick="show()"/>登陆</button>
+                <input type="button" class="btn btn-primary btn-large btn-block" onclick="operation('login')"  value="登录"/>
 				</br>
 				<a class="login-link" href="#">忘记密码?</a>&nbsp <a class="login-link" href="http://localhost:8080/mmp/register.jsp">没有账号？前往注册！</a>
 			</div>
 		</div>
 	</div>
+	</form>
 </body>
   
   

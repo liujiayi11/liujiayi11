@@ -23,6 +23,7 @@ public class ActionServlet extends HttpServlet {
 
 	public void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		System.out.println("dopost");
 		//从应用程序中拿出配置信息
 		Properties config = (Properties)this.getServletContext().getAttribute("config");
 		//从应用程序中拿出action池
@@ -36,8 +37,10 @@ public class ActionServlet extends HttpServlet {
 		if(b>a && a>0){
 			uri = uri.substring(a+1, b);
 		}
+		System.out.println(uri);
 		//============form的操作================================
 		String formKey = uri+"Form";//calcForm
+		System.out.println(formKey);
 		//cn.zkingsoft.web.form.CalcForm
 		String formClassName = config.getProperty(formKey);
 		ActionForm form = null;
@@ -52,9 +55,12 @@ public class ActionServlet extends HttpServlet {
 			while(it.hasNext()){
 				Map.Entry<String, String[]> me = it.next();
 				String key = me.getKey();
+				System.out.println(key);
 				String[] values = me.getValue();
+				System.out.println(values.toString());
 				//key就是first或者second
 				String methodName = "set"+key.substring(0, 1).toUpperCase()+key.substring(1);
+				System.out.println(methodName);
 				Method m = c.getMethod(methodName, new Class[]{String.class});
 				//调用set方法
 				m.invoke(form, values[0]);

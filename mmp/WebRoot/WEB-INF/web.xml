@@ -17,7 +17,7 @@
   
   <servlet>
   	<servlet-name>action</servlet-name>
-  	<servlet-class>cn.zkingsoft.web.core.ActionServlet</servlet-class>
+  	<servlet-class>core.ActionServlet</servlet-class>
   	<init-param>
   		<param-name>configLocation</param-name>
   		<param-value>/WEB-INF/config.properties</param-value>

@@ -25,6 +25,7 @@ public class LoginAction extends DispatcherAction{
 			HttpServletResponse reponse, ActionForm form)
 			throws ServletException, IOException {		
 		LoginForm uf = (LoginForm)form;
+		System.out.println(uf.getUpass());
 		String upass = uf.getUpass();
 		String tel = uf.getTel();
 		byte[] pass = GetMD5Byte.getMD5Byte(upass);
@@ -43,7 +44,7 @@ public class LoginAction extends DispatcherAction{
 			return new ActionForward(true,"main");
 		}else{
 			request.setAttribute("msg","’À∫≈ªÚ’ﬂ√‹¬Î¥ÌŒÛ£°");
-			return new ActionForward(true,"login");
+			return new ActionForward(true,"login1");
 		}
 	}
 
