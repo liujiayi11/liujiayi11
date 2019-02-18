@@ -188,29 +188,6 @@
 				<!--左侧 end-->
 				<!--右侧-->
 				<div class="fr" id="top_nav_right">
-					<!--已登录-->
-					<div id="userbar">
-						<a
-							href="http://passport.u17.com/member_v2/login.php?url=http://www.u17.com/comic_list/th99_gr99_ca99_ss99_ob0_ac0_as0_wm0_co99_ct99_p1.html?order=2"
-							class="btn_login">登录<em></em></a><a
-							href="http://passport.u17.com/member_v2/signup.php?url=http://www.u17.com/comic_list/th99_gr99_ca99_ss99_ob0_ac0_as0_wm0_co99_ct99_p1.html?order=2"
-							class="btn_regist" style="margin: 0 15px 0 12px;">立即注册</a>
-						<div class="pop_wrap user_i" style="margin-right:38px">
-							<div class="">
-								<a href="self.jsp" class="nav" style="color: #333"
-									target="_blank">个人中心<em></em></a>
-								<div class="pop_box right_pop_box" style="display: none;">
-									<ul class="pop_box_con usercenter_pop cf">
-										<li><a href="reader.jsp"
-											target="_blank" style="width: 72px;"><span><i>我是读者</i></span></a></li>
-										<li><a href="reader.jsp" target="_blank"
-											style="width: 72px;"><span><i>我是作者</i></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!--已登录 end-->
 					<!--通知-->
 					<div class="pop_wrap">
 						<a href="javascript:void(0);" class="nav">通知
