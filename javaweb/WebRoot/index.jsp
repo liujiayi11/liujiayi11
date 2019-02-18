@@ -355,7 +355,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div id="loop_container">
 				<div class="loop_slide_box">
 					<ul>
-						<li class="cur">
+						<li class="cur">    
 							<a href="http://www.u17.com/click/1_111_43035.html" target="_blank" data-little="http://image.mylife.u17t.com/2018/10/25/1540451291_NRP4o4tomEoA.jpg" data-src="http://image.mylife.u17t.com/2018/10/26/1540532285_xIVhTB0FlDRT.jpg" data-call="讲述盛唐浮华背后的欲、爱、权、谋"></a>
 						</li>
 						<li>
