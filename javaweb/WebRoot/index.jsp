@@ -5544,7 +5544,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="go_top">
 			<div class="top_head"></div>
 			<div class="top_click"></div>
-			<a href="http://www.u17.com/z/app/pc_download/pc_download.html" target="_blank">
+			<a href="http://www.u17.com/z/app/pc_doswnload/pc_download.html" target="_blank">
 				<div class="top_code">
 					<div class="erweima_box"> <img src="http://static.u17i.com/v4/common/images/fixed_ewm.png" alt=""> </div>
 				</div>
