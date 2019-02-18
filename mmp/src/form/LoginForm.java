@@ -1,8 +1,8 @@
-package from;
+package form;
 
 import core.ActionForm;
 
-public class LoginFrom extends ActionForm{
+public class LoginForm extends ActionForm{
 	private String tel;
 	private String upass;
 	

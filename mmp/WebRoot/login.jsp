@@ -16,7 +16,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   		//js对象
   		//var user = {name:'zhangsan',age:24,tel:['1399999','1388888'],book:{bname:'java',price:200}};
   		//var userstr = JSON.stringify(user);	
-  		function show(){ 		
+  		function show(){ 
+  		   alert("11");		
   			$.ajax({
   				type:'POST',
   				url:'login.do',
@@ -32,7 +33,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <body>
 
   <body>
-  <form>
 	<div class="login">
 		<div class="login-screen">
 			<div class="app-title">
@@ -53,7 +53,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 		</div>
 	</div>
-	</form>
 </body>
   
   

@@ -8,6 +8,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import form.LoginForm;
+
 import pojo.Users;
 import service.UsersService;
 import service.impl.UsersServiceImpl;
@@ -22,8 +24,9 @@ public class LoginAction extends DispatcherAction{
 	public ActionForward login(HttpServletRequest request,
 			HttpServletResponse reponse, ActionForm form)
 			throws ServletException, IOException {		
-		String upass = request.getParameter("upass");
-		String tel = request.getParameter("tel");
+		LoginForm uf = (LoginForm)form;
+		String upass = uf.getUpass();
+		String tel = uf.getTel();
 		byte[] pass = GetMD5Byte.getMD5Byte(upass);
 
 		System.out.println( "√‹¬Î"+ pass.toString()+"µÁª∞£∫"+tel);
