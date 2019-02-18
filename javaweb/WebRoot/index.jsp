@@ -180,37 +180,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<div class="pop_wrap">
 							<a href="http://www.u17.com/" class="nav1 nav_index" style="color:#333;">首页</a>
 						</div>
-						<!-- 首页 end -->
-						<!--手机版-->
-						<div class="pop_wrap">
-							<a href="" class="" target="_blank" style="color:#333;"><em></em></a>
-							<div class="pop_box" style="display:none;"></div>
-						</div>
-						<!--手机版 end-->
-						<!--小说-->
-						<div class="pop_wrap" style="display:none;">
-							<a href="javascript:void(0);" class="nav nav_novel">小说<em></em></a>
-							<div class="pop_box" style="display:none;"></div>
-						</div>
-						<!--小说end-->
-						<!--有熊-->
-						<div class="pop_wrap" style="display:none;">
-							<a href="javascript:;" class="nav nav_uxiong">有熊<em></em></a>
-							<div class="pop_box" style="display:none;"></div>
-						</div>
-						<!--有熊 end-->
-						<!--游戏-->
-						<div class="pop_wrap">
-							<a href="http://game.u17.com/" class="" target="_blank" style="color:#333;"><em></em></a>
-							<div class="pop_box" style="display:none;"></div>
-						</div>
-						<!--游戏 end-->
+						<!-- 首页 end -->						
 					</div>
 					<!--左侧 end-->
 					<!--右侧-->
 					<div class="fr" id="top_nav_right">
 						<!--已登录-->
-						<div id="userbar"></div>
+						<!--  <div id="userbar">-->
+						<a href="http://passport.u17.com/member_v2/login.php?url=http://www.u17.com/" class="btn_login">登录<em></em></a>
+						<a href="http://passport.u17.com/member_v2/signup.php?url=http://www.u17.com/" class="btn_regist" style="margin: 0 15px 0 12px;">立即注册</a>
+						<!--</div>-->
+						<div class="pop_wrap user_i" style="margin-right:38px">
+							<div class="u_nav">
+							<a href="reader.jsp" class="nav" style="color: #333" target="_blank">个人中心<em></em></a>						
+							</div>
+						</div>
+						
 						<!--已登录 end-->
 						<!--通知-->
 						<div class="pop_wrap">
@@ -343,9 +328,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<!-- 上边导航和搜索 -->
 			<div class="top_nav_shadow">
 				<div class="top_nav">
-					<h1 class="fl top_logo"> <a href="http://www.u17.com/" title="有妖气">有妖气首页</a> </h1>
+					<h1 class="fl top_logo"> <a href="MyJsp.jsp" title="有妖气">有妖气首页</a> </h1>
 					<a href="http://comic.u17.com/rank/" class="fl nav_list" target="_blank">排行榜</a>
-					<a href="http://www.u17.com/comic_list/th99_gr99_ca99_ss99_ob0_ac0_as0_wm0_co99_ct99_p1.html?order=2" class="fl nav_list" target="_blank">分类</a>
+					<a href="classifi.jsp" class="fl nav_list" target="_blank">分类</a>
 					<a href="http://www.u17.com/comic_list/th99_gr99_ca99_ss99_ob0_ac0_as0_wm0_co99_ct99_p1.html?order=1" class="fl nav_list" target="_blank">更新<em class="update_v5Box"><i class="update_v5" id="banner_comic_update_num">38</i></em></a>
 					<a href="http://www.u17.com/comic_list/th99_gr99_ca99_ss99_ob0_ac0_as0_wm0_co99_ct99_p1.html?iv=4" class="fl nav_list" target="_blank">VIP漫画</a>
 					<a href="http://www.u17.com/comic_list/th99_gr99_ca99_ss99_ob0_ac0_as0_wm0_co99_ct99_p1.html?iv=12" class="fl nav_list" target="_blank">订阅</a>
