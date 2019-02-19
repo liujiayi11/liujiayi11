@@ -36,9 +36,12 @@ function showimg(o) {
 }
 
 function show(tel) {
+var reg = /^\d{11}$/;
 	if (tel == "") {
 		document.getElementById("kkk").innerHTML = "该电话不能为空";
-	} else {
+	} else if(!reg.test(tel)){
+		document.getElementById("kkk").innerHTML = "电话数字11位";
+	}else {
 		var request = new XMLHttpRequest(); // 新建XMLHttpRequest对象
 		request.onreadystatechange = function() { // 状态发生变化时，函数被回调
 			if (request.readyState == 4) { // 成功完成
@@ -48,7 +51,7 @@ function show(tel) {
 					if (request.responseText == "cw") {
 						document.getElementById("kkk").innerHTML = "该电话已注册";
 					} else {
-						document.getElementById("kkk").innerHTML = "该电话可以注册";
+						document.getElementById("kkk").innerHTML = "";
 					}
 				}
 			}
@@ -59,10 +62,62 @@ function show(tel) {
 	}
 
 }
+function show1(uname) {
+if (uname == "") {
+		document.getElementById("kk").innerHTML = "该昵称不能为空";
+	} 
+}
+function show2(upass) {
+if (upass == "") {
+		document.getElementById("pass").innerHTML = "该密码不能为空";
+	} 
+}
+function show3(repass) {
+var upass = document.getElementById("upass").value;
+var repass = document.getElementById("repass").value;
+if(upass==repass){
+}else{
+document.getElementById("pass1").innerHTML = "密码不一致";
+}
+}
+function showi(upass) {
+if (upass == "") {
+		document.getElementById("image").innerHTML = "该图片不能为空";
+	} 
+}
+
 function change() {
+	var error1 = document.getElementById("kk").innerHTML;
+	if(error1!=null){
+		document.getElementById("kk").innerHTML = "";
+	}
+}
+function change1() {
 	var error = document.getElementById("kkk").innerHTML;
-	if (error != null) {
+	if(error!=null){
 		document.getElementById("kkk").innerHTML = "";
+
+	}
+}
+function change2() {
+	var error = document.getElementById("image").innerHTML;
+	if(error!=null){
+		document.getElementById("image").innerHTML = "";
+
+	}
+}
+function change3() {
+	var error = document.getElementById("pass").innerHTML;
+	if(error!=null){
+		document.getElementById("pass").innerHTML = "";
+
+	}
+}
+function change4() {
+	var error = document.getElementById("pass1").innerHTML;
+	if(error!=null){
+		document.getElementById("pass1").innerHTML = "";
+
 	}
 }
 </script>
@@ -81,48 +136,50 @@ function change() {
 				<div id="signup">
 					<h1>
 						免费注册
-					</h1>
-					<span style="color: red" id="kkk"></span>
+					</h1>				
+					<span style="color: red" id="kk"></span>
 					<form id="myform">
 						<div class="field-wrap">
 							<label>
 								昵称
 								<span class="req">*</span>
 							</label>
-							<input type="text" name="uname" required autocomplete="off" />
+							<input type="text" name="uname" required autocomplete="off" onblur="show1(this.value)" onfocus="change()"/>
 						</div>
+						<span style="color: red" id="kkk"></span>
 						<div class="field-wrap">
 							<label>
 								手机号/电话
 								<span class="req">*</span>
 							</label>
 							<input type="text" name="tel" required autocomplete="off"
-								onblur="show(this.value)" onfocus="change()" />
+								onblur="show(this.value)" onfocus="change1()" />
 						</div>
-
+						<span style="color: red" id="image"></span>
 						<div class="field-wrap">
 							<label>
 								选择头像
 								<span class="req">*</span>
 							</label>
 							<input type="file" onchange="showimg(this)" name="headimage"
-								required autocomplete="off" />
+							 onblur="showi(this.value)" onfocus="change2()"	required autocomplete="off" />
 							<img src="" id="img" width="50px" height="40px" />
 						</div>
-
+						<span style="color: red" id="pass"></span>
 						<div class="field-wrap">
 							<label>
 								设置密码
 								<span class="req">*</span>
 							</label>
-							<input type="password" name="upass" required autocomplete="off" />
+							<input type="password" id="upass" name="upass" required autocomplete="off" onblur="show2(this.value)" onfocus="change3()"/>
 						</div>
+						<span style="color: red" id="pass1"></span>
 						<div class="field-wrap">
 							<label>
 								确认密码
 								<span class="req">*</span>
 							</label>
-							<input type="password" name="repass" required autocomplete="off" />
+							<input type="password" id="repass" name="repass" required autocomplete="off" onblur="show3(this.value)" onfocus="change4()"/>
 						</div>
 						<button type="submit" class="button button-block"
 							onclick="operation('register')" />
