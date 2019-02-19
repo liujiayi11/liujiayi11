@@ -124,16 +124,7 @@ function change4() {
 	</head>
 	<body>
 		<div class="form">
-			<ul class="tab-group">
-				<li class="tab active">
-					<a href="#signup">漫漫注册</a>
-				</li>
-				&nbsp &nbsp
-				<a href="http://localhost:8080/mmp/login.jsp">返回登陆</a>
-			</ul>
-
-			<div class="tab-content">
-				<div id="signup">
+			<div class="tab-content">		
 					<h1>
 						免费注册
 					</h1>				
@@ -186,9 +177,7 @@ function change4() {
 							注册
 						</button>
 					</form>
-
 				</div>
-			</div>
 			<!-- tab-content -->
 		</div>
 		<!-- /form -->
