@@ -35,16 +35,17 @@ public class CartDaoImpl implements CartDao {
 	 */
 	public boolean saveCart(Caricature cart, Connection conn) throws Exception {
 		boolean flag = false;
-		String sql = "insert into caricature(cartName,cartAuthor,cartIntro,cartImage,cartLatest) values(?,?,?,?,?)";
+		String sql = "insert into caricature(cartId,cartName,cartAuthor,cartIntro,cartImage,cartLatest) values(?,?,?,?,?,?)";
 		PreparedStatement ps = null;
 		ps = conn.prepareStatement(sql);
 		String uuid=PrimaryKeyUUID.getPrimaryKey();
 		cart.setCartId(uuid);
-		ps.setString(1,cart.getCartName());
-		ps.setString(2,cart.getCartAuthor() );
-		ps.setString(3,cart.getCartIntro() );
-		ps.setString(4,cart.getCartImage() );
-		ps.setString(5,cart.getCartLatest() );
+		ps.setString(1,uuid);
+		ps.setString(2,cart.getCartName());
+		ps.setString(3,cart.getCartAuthor() );
+		ps.setString(4,cart.getCartIntro() );
+		ps.setString(5,cart.getCartImage() );
+		ps.setString(6,cart.getCartLatest() );
 		int n = ps.executeUpdate();
 		if (n > 0) {
 			flag = true;

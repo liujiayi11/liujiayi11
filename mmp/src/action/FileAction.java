@@ -27,18 +27,22 @@ public class FileAction extends DispatcherAction{
 		FileForm uf = (FileForm)form;
 		String cartName = uf.getCartName();
 		cartName = new String(cartName.getBytes("ISO8859-1"),"UTF-8");
+		String cartIntro = uf.getCartIntro();
+		cartIntro = new String(cartIntro.getBytes("ISO8859-1"),"UTF-8");
+		System.out.println(cartIntro.length());
 		String cartAuthor = uf.getCartAuthor();
-		cartName = new String(cartAuthor.getBytes("ISO8859-1"),"UTF-8");
+		cartAuthor = new String(cartAuthor.getBytes("ISO8859-1"),"UTF-8");
 		String cartLatest = uf.getCartLatest();
-		cartName = new String(cartLatest.getBytes("ISO8859-1"),"UTF-8");
+		cartLatest = new String(cartLatest.getBytes("ISO8859-1"),"UTF-8");
 		String cartImage = uf.getCartImage();
-		cartName = new String(cartImage.getBytes("ISO8859-1"),"UTF-8");
+		cartImage = new String(cartImage.getBytes("ISO8859-1"),"UTF-8");
 		//主键生成
 		/* users.setUid(PrimaryKeyUUID.getPrimaryKey()); */
 		//用户名转码
 		Caricature c = new Caricature();
 		c.setCartName(cartName);
 		c.setCartAuthor(cartAuthor);
+		c.setCartIntro(cartIntro);
 		c.setCartLatest(cartLatest);
 		c.setCartImage(cartImage);
 		boolean f = cs.addCart(c);
