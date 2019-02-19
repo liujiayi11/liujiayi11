@@ -29,7 +29,6 @@ public class LoginAction extends DispatcherAction{
 		String upass = uf.getUpass();
 		String tel = uf.getTel();
 		byte[] pass = GetMD5Byte.getMD5Byte(upass);
-
 		System.out.println( "密码"+ pass.toString()+"电话："+tel);
 		//主键生成
 		/* users.setUid(PrimaryKeyUUID.getPrimaryKey()); */

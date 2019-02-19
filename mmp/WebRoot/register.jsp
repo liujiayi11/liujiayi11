@@ -49,7 +49,7 @@
 					<h1>
 						免费注册
 					</h1>
-					<form action="register.do" method="post">
+					<form id="myform">
 						<div class="field-wrap">
 							<label>
 								昵称
@@ -87,9 +87,9 @@
 								确认密码
 								<span class="req">*</span>
 							</label>
-							<input type="password" name="repass" required autocomplete="off" />
+							<input type="password" name="repass" required autocomplete="off"/>
 						</div>
-						<button type="submit" class="button button-block" />
+						<button type="submit" class="button button-block" onclick="operation('register')"/>
 							注册
 						</button>
 					</form>

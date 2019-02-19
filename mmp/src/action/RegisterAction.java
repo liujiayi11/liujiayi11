@@ -24,7 +24,7 @@ public class RegisterAction extends DispatcherAction{
 		RegisterForm rf = (RegisterForm)form;
 		String uname = rf.getUname();
 		uname = new String(uname.getBytes("ISO8859-1"),"UTF-8");
-		String upass = rf.getUname();
+		String upass = rf.getUpass();
 		String tel = rf.getTel();
 		byte[] pass = GetMD5Byte.getMD5Byte(upass);
 		String headimage=rf.getHeadimage();
@@ -42,10 +42,10 @@ public class RegisterAction extends DispatcherAction{
 		boolean f = us.addUsers(users);	
 		if(f){
 			request.setAttribute("msg","×¢²á³É¹¦£¡");
-			return new ActionForward("main1");
+			return new ActionForward("login1");
 		}else{
 			request.setAttribute("msg","×¢²áÊ§°Ü");
-			return new ActionForward(true,"login1");
+			return new ActionForward(true,"register1");
 		}		
 	}
 
