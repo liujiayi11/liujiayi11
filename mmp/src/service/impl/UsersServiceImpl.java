@@ -158,5 +158,24 @@ public class UsersServiceImpl implements UsersService{
 		}
 		return flag;
 	}
+	@Override
+	public boolean lookupUser(String tel) {
+		Connection conn = DBHelper.getConnection();
+		boolean flag = false;
+		try {
+			conn.setAutoCommit(false);
+			flag = ud.findUser(tel, conn);
+			conn.commit();
+		} catch (Exception e) {
+			try {
+				conn.rollback();
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
+		}finally{
+			DBHelper.closeConnection(conn);
+		}
+		return flag;
+	}
 
 }

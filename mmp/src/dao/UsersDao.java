@@ -14,4 +14,5 @@ public interface UsersDao {
 	public List<Users> selectAllUsersByCondition(Connection conn) throws Exception;
 	public List<Users> selectAllUsersByCondition(Connection conn,Map<String, String> condition) throws Exception;
 	public boolean findUsers(String tel,byte[] upass,Connection conn) throws Exception;
+	public boolean findUser(String tel,Connection conn) throws Exception;
 }

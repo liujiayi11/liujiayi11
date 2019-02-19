@@ -162,9 +162,7 @@ public class UsersDaoImpl implements UsersDao {
 				ps.setString(++index, "%"+entry.getValue()+"%");
 			}
 		}
-		ResultSet rs = null;
-
-		
+		ResultSet rs = null;	
 		rs = ps.executeQuery();
 		while (rs.next()) {
 			Users users = new Users();
@@ -202,6 +200,22 @@ public class UsersDaoImpl implements UsersDao {
 		rs.close();
 		ps.close();
 		return gm.isMD5Equals(upass, users.getUpass());
+	}
+	
+	public boolean findUser(String tel,Connection conn) throws Exception {
+		Users users = null;
+		String sql = "select * from users where tel = ?";
+		PreparedStatement ps = null;
+		ResultSet rs = null;
+		ps = conn.prepareStatement(sql);
+		ps.setString(1, tel);
+		rs = ps.executeQuery();
+		if (rs.next()) {
+			return true;
+		}
+		rs.close();
+		ps.close();
+		return false;
 	}
 
 

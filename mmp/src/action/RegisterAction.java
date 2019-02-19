@@ -1,6 +1,7 @@
 package action;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -48,5 +49,23 @@ public class RegisterAction extends DispatcherAction{
 			return new ActionForward(true,"register1");
 		}		
 	}
-
+	public ActionForward checktel(HttpServletRequest request,
+			HttpServletResponse reponse, ActionForm form)
+			throws ServletException, IOException {
+		System.out.println("checktel");
+		RegisterForm rf = (RegisterForm)form;
+		String tel = rf.getTel();
+		System.out.println(tel);
+		PrintWriter pw = reponse.getWriter();
+		boolean f = us.lookupUser(tel);	
+		System.out.println(f);
+		if(!f){			
+			pw.write("bcw");
+			request.setAttribute("msg","电话可以注册");
+		}else{
+			pw.write("cw");
+			request.setAttribute("msg","电话已经注册");
+		}
+		return null;	
+	}
 }

@@ -13,26 +13,59 @@
 
 
 		<link rel="stylesheet" href="css/Registerstyle.css">
+		<script type="text/javascript" src="js/jquery-1.6.1.min.js">
+</script>
 		<script type="text/javascript">
-		function operation(val) {
-			var form = document.getElementById("myform");
-			form.action = "register.do?param=" + val;
-			form.method = "post";
-			form.submit();
-		}
-		/**
- 		*图片预览
- 		*/
-		function showimg(o) {
-			var fr = new FileReader();
-			var f = o.files[0];
-			fr.readAsDataURL(f);
-			fr.onload = function() {
-				alert(fr.result);
-				document.getElementById("img").src = fr.result;
+function operation(val) {
+	var form = document.getElementById("myform");
+	form.action = "register.do?param=" + val;
+	form.method = "post";
+	form.submit();
+}
+/**
+ *图片预览
+ */
+function showimg(o) {
+	var fr = new FileReader();
+	var f = o.files[0];
+	fr.readAsDataURL(f);
+	fr.onload = function() {
+		alert(fr.result);
+		document.getElementById("img").src = fr.result;
+	}
+}
+
+function show(tel) {
+	if (tel == "") {
+		document.getElementById("kkk").innerHTML = "该电话不能为空";
+	} else {
+		var request = new XMLHttpRequest(); // 新建XMLHttpRequest对象
+		request.onreadystatechange = function() { // 状态发生变化时，函数被回调
+			if (request.readyState == 4) { // 成功完成
+				// 判断响应结果:
+				if (request.status == 200) {
+					// 成功，通过responseText拿到响应的文本:
+					if (request.responseText == "cw") {
+						document.getElementById("kkk").innerHTML = "该电话已注册";
+					} else {
+						document.getElementById("kkk").innerHTML = "该电话可以注册";
+					}
+				}
 			}
 		}
-		</script>
+		// 发送请求:
+		request.open('POST', 'register.do?param=checktel&tel=' + tel);
+		request.send();
+	}
+
+}
+function change() {
+	var error = document.getElementById("kkk").innerHTML;
+	if (error != null) {
+		document.getElementById("kkk").innerHTML = "";
+	}
+}
+</script>
 	</head>
 	<body>
 		<div class="form">
@@ -49,6 +82,7 @@
 					<h1>
 						免费注册
 					</h1>
+					<span style="color: red" id="kkk"></span>
 					<form id="myform">
 						<div class="field-wrap">
 							<label>
@@ -62,7 +96,8 @@
 								手机号/电话
 								<span class="req">*</span>
 							</label>
-							<input type="text" name="tel" required autocomplete="off" />
+							<input type="text" name="tel" required autocomplete="off"
+								onblur="show(this.value)" onfocus="change()" />
 						</div>
 
 						<div class="field-wrap">
@@ -87,9 +122,10 @@
 								确认密码
 								<span class="req">*</span>
 							</label>
-							<input type="password" name="repass" required autocomplete="off"/>
+							<input type="password" name="repass" required autocomplete="off" />
 						</div>
-						<button type="submit" class="button button-block" onclick="operation('register')"/>
+						<button type="submit" class="button button-block"
+							onclick="operation('register')" />
 							注册
 						</button>
 					</form>

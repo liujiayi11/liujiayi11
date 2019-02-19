@@ -14,4 +14,5 @@ public interface UsersService {
 	public List<Users> queryUsersByCondition();
 	public List<Users> queryUsersByCondition(Map<String, String> condition);
 	public boolean lookupUsers(String tel,byte[] upass);
+	public boolean lookupUser(String tel);
 }
