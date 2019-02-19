@@ -23,14 +23,8 @@
 	users.setUname(uname);
 	//密码加密
 	users.setUpass(pass); 
-	users.setTel(tel);
-	
+	users.setTel(tel);	
 	users.setHeadimage(headimage);
-	//薪水转型
-	
-	//生日转型
-	
-	
 	boolean f = us.addUsers(users);
 	
 	if(f){

@@ -41,7 +41,7 @@ public class LoginAction extends DispatcherAction{
 		boolean f = us.lookupUsers(tel, pass);				
 		if(f){
 			request.setAttribute("msg","登陆成功！");
-			return new ActionForward(true,"main");
+			return new ActionForward("main");
 		}else{
 			request.setAttribute("msg","账号或者密码错误！");
 			return new ActionForward(true,"login1");
