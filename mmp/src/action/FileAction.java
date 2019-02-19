@@ -12,6 +12,7 @@ import pojo.Caricature;
 import pojo.Users;
 import service.CartService;
 import service.impl.CartServiceImpl;
+import service.impl.UsersServiceImpl;
 import util.GetMD5Byte;
 import core.ActionForm;
 import core.ActionForward;
@@ -20,6 +21,7 @@ import form.FileForm;
 import form.LoginForm;
 public class FileAction extends DispatcherAction{
 	CartServiceImpl cs = new CartServiceImpl();
+	UsersServiceImpl us = new UsersServiceImpl();
 	public ActionForward file(HttpServletRequest request,
 			HttpServletResponse reponse, ActionForm form)
 			throws ServletException, IOException {	
@@ -55,5 +57,17 @@ public class FileAction extends DispatcherAction{
 			return new ActionForward(true,"file1");
 		}	
 	}
-
+	
+	
+	public ActionForward fav(HttpServletRequest request,
+			HttpServletResponse reponse, ActionForm form)
+			throws ServletException, IOException {	
+		System.out.println("fav");
+		FileForm uf = (FileForm)form;
+		String cartName = uf.getCartName();
+		System.out.println(cartName);
+		boolean f = us.addupdatecart(cartName, "1234");
+		return null;
+	
+	}
 }

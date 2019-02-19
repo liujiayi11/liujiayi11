@@ -202,6 +202,34 @@ public class UsersDaoImpl implements UsersDao {
 		return gm.isMD5Equals(upass, users.getUpass());
 	}
 	
+	//增加用户订阅漫画及该漫画订阅数
+	@Override
+	public boolean addupdatecart(String newcart, String tel, Connection conn) throws Exception {
+		boolean flag = false;
+//		String sql = "update users set cart=cart+? where tel=?";
+		String sql = "update users set cart=CONCAT(cart,?) where tel=?";
+		String sql1 = "update caricature set cartNum=cartNum+1 where cartName=?";
+		PreparedStatement ps = null;
+		ps = conn.prepareStatement(sql);
+		ps.setString(1,newcart);
+		ps.setString(2,tel);
+		System.out.println(newcart+tel);
+		int n = ps.executeUpdate();
+		System.out.println(1);
+		if (n > 0) {
+			flag = true;
+		}
+		if(flag){
+			System.out.println(2);
+			ps=conn.prepareStatement(sql1);
+			ps.setString(1, newcart);
+			int ud=ps.executeUpdate();
+			flag=ud>0;
+		}
+		ps.close();
+		return flag;
+	}
+	
 	public boolean findUser(String tel,Connection conn) throws Exception {
 		Users users = null;
 		String sql = "select * from users where tel = ?";
@@ -217,6 +245,4 @@ public class UsersDaoImpl implements UsersDao {
 		ps.close();
 		return false;
 	}
-
-
 }
