@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/dao
+END
+IBookDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/dao/IBookDAO.java
+END
+IUserDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/dao/IUserDAO.java
+END
+IAccountDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/dao/IAccountDAO.java
+END

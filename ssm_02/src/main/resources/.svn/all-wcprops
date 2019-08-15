@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/demo/!svn/ver/2/ssm_02/src/main/resources
+END
+app.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/demo/!svn/ver/2/ssm_02/src/main/resources/app.xml
+END
+mybatis_config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/demo/!svn/ver/2/ssm_02/src/main/resources/mybatis_config.xml
+END

@@ -1,0 +1,67 @@
+8
+
+dir
+2
+https://win-1bi16i8i5a6/svn/demo/ssm_02/src/main/java/cn/sz/gl/service
+https://win-1bi16i8i5a6/svn/demo
+
+
+
+2019-08-14T09:21:01.270311Z
+2
+zhangsan
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4442e5a6-394c-1e44-84a3-2c29ebe66cba
+
+IAccountService.java
+file
+
+
+
+
+2019-08-13T09:03:31.864000Z
+8bcea34755ccba56ea75a7e1e2f13dde
+2019-08-14T09:21:01.270311Z
+2
+zhangsan
+
+IBookService.java
+file
+
+
+
+
+2019-08-13T12:31:33.927000Z
+81b376b44b885727842034cd0bcbb844
+2019-08-14T09:21:01.270311Z
+2
+zhangsan
+
+IUserService.java
+file
+
+
+
+
+2019-08-13T09:03:31.880000Z
+d8b58e9e81fd248bc2f45c56639291ab
+2019-08-14T09:21:01.270311Z
+2
+zhangsan
+
+impl
+dir
+

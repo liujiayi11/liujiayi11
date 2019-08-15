@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/service
+END
+IBookService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/service/IBookService.java
+END
+IUserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/service/IUserService.java
+END
+IAccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/demo/!svn/ver/2/ssm_02/src/main/java/cn/sz/gl/service/IAccountService.java
+END
